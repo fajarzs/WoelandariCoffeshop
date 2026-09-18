@@ -5,11 +5,14 @@ $role = $_SESSION['role'];
 $current_page = basename($_SERVER['PHP_SELF']);
 $isAdmin = ($role == 'admin' || $role == 'superadmin');
 $isKaryawan = ($role == 'karyawan');
+
+// Determine base URL dynamically for asset paths
+$base_url = rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
 ?>
 <aside class="sidebar" id="mainSidebar">
     <div class="brand">
         <div class="brand-logo-container">
-            <img src="/woelandari_coffeshop/assets/images/gambar-mentahan/logo.png" alt="Woelandari Coffee Lab Logo" class="brand-logo">
+            <img src="<?= $base_url ?>/assets/images/gambar-mentahan/logo.png" alt="Woelandari Coffee Lab Logo" class="brand-logo">
         </div>
     </div>
 
