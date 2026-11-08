@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT ASL PRIMA DATA - Login</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome untuk Ikon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        /* Warna latar belakang biru sangat gelap menyesuaikan gambar */
+        background-color: #0f1423;
+        font-family: "Inter", sans-serif;
+      }
+      /* Gradient khusus untuk tombol dan logo WiFi */
+      .bg-brand-gradient {
+        background: linear-gradient(135deg, #1d4ed8 0%, #06b6d4 100%);
+      }
+    </style>
+  </head>
+  <body
+    class="text-white min-h-screen flex flex-col items-center pt-12 pb-6 px-4"
+  >
+    <!-- Area Header / Logo -->
+    <div class="w-full max-w-sm flex flex-col items-center">
+      <!-- Logo WiFi -->
+      <div
+        class="w-[72px] h-[72px] rounded-2xl bg-brand-gradient flex items-center justify-center mb-6"
+      >
+        <i class="fa-solid fa-wifi text-3xl text-white"></i>
+      </div>
+
+      <!-- Judul -->
+      <p
+        class="text-[#06b6d4] text-xs font-bold tracking-widest uppercase mb-2"
+      >
+        Welcome Back
+      </p>
+      <h1 class="text-3xl font-black tracking-tight mb-4">PT ASL PRIMA DATA</h1>
+      <p
+        class="text-slate-400 text-center text-[15px] px-2 mb-8 leading-relaxed"
+      >
+        Pantau status paket, koneksi, dan tagihan internet Anda kapan saja
+      </p>
+
+      <!-- Kartu Status (System, Billing, Network) -->
+      <div class="grid grid-cols-3 gap-3 w-full mb-8">
+        <div
+          class="border border-slate-700/60 bg-slate-800/40 rounded-2xl p-4 flex flex-col items-center justify-center"
+        >
+          <i class="fa-solid fa-chart-simple text-slate-400 mb-2"></i>
+          <span class="text-slate-400 text-xs mb-1">System</span>
+          <span class="text-[#06b6d4] text-sm font-semibold">Online</span>
+        </div>
+        <div
+          class="border border-slate-700/60 bg-slate-800/40 rounded-2xl p-4 flex flex-col items-center justify-center"
+        >
+          <i class="fa-regular fa-credit-card text-slate-400 mb-2"></i>
+          <span class="text-slate-400 text-xs mb-1">Billing</span>
+          <span class="text-[#06b6d4] text-sm font-semibold">Active</span>
+        </div>
+        <div
+          class="border border-slate-700/60 bg-slate-800/40 rounded-2xl p-4 flex flex-col items-center justify-center"
+        >
+          <i class="fa-solid fa-globe text-slate-400 mb-2"></i>
+          <span class="text-slate-400 text-xs mb-1">Network</span>
+          <span class="text-[#06b6d4] text-sm font-semibold">Available</span>
+        </div>
+      </div>
+
+      <!-- Form Login -->
+      <div
+        class="w-full border border-slate-700/60 bg-slate-800/30 rounded-[2rem] p-6 mb-8"
+      >
+        <h2
+          class="text-center text-slate-500 text-xs font-bold tracking-widest uppercase mb-6"
+        >
+          Masuk Ke Akun Anda
+        </h2>
+
+        <form>
+          <!-- Input Username -->
+          <div class="mb-5">
+            <label class="block text-slate-300 text-sm mb-2 pl-1"
+              >Nomor PPPoE / Username</label
+            >
+            <input
+              type="text"
+              value="suudi2@nguling"
+              class="w-full bg-[#0B1120] border border-slate-700/60 rounded-xl px-4 py-3.5 text-white outline-none focus:border-[#06b6d4] transition-colors"
+              placeholder="Masukkan username"
+            />
+          </div>
+
+          <!-- Input Password -->
+          <div class="mb-6">
+            <label class="block text-slate-300 text-sm mb-2 pl-1"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="w-full bg-[#0B1120] border border-slate-700/60 rounded-xl px-4 py-3.5 text-white outline-none focus:border-[#06b6d4] transition-colors"
+              placeholder=""
+            />
+          </div>
+
+          <!-- Tombol Submit -->
+          <button
+            type="button"
+            class="w-full bg-brand-gradient text-white font-bold py-4 rounded-xl hover:opacity-90 transition-opacity"
+          >
+            Masuk ke Dashboard
+          </button>
+        </form>
+
+        <!-- Label Keamanan (Badges) -->
+        <div class="flex justify-center gap-3 mt-6">
+          <span
+            class="border border-slate-700/60 text-slate-500 text-[11px] px-3 py-1.5 rounded-lg"
+            >OAuth 2.0</span
+          >
+          <span
+            class="border border-slate-700/60 text-slate-500 text-[11px] px-3 py-1.5 rounded-lg"
+            >Encrypted</span
+          >
+          <span
+            class="border border-slate-700/60 text-slate-500 text-[11px] px-3 py-1.5 rounded-lg"
+            >Verified</span
+          >
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="mt-8 text-center">
+        <p class="text-slate-600 text-xs">
+          &copy; 2026 Aphis Technology &bull; aphisprib@gmail.com
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
