@@ -1,8 +1,8 @@
-# ☕ Woelandari Coffee - Sistem Manajemen Toko Kopi Berbasis Website
+# Sistem Manajemen Toko Kopi Berbasis Website - Toko Kopi Woelandari
 
 <div align="center">
 
-![Woelandari Coffee](assets/images/gambar-mentahan/logo.png)
+<img src="assets/images/gambar-mentahan/logo.png" alt="Woelandari Coffee" width="320" style="max-width: 100%; height: auto;">
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.x%20%7C%20Native-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 [![Database](https://img.shields.io/badge/Database-MySQL%20%2F%20db__cafe-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
